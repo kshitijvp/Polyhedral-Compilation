@@ -50,7 +50,7 @@ Polly generates the Schedule accordingly and tracks the dependencies:
 
 ## Passes in MLIR Affine Dialect
 ```
-./build_mlir/bin/mlir-opt conv2d.mlir --affine-parallelize -o conv2d_opt.mlir
+./build_mlir/bin/mlir-opt test.mlir --affine-parallelize -o test_opt.mlir
 ```
 
 `-affine-parallelize` - Parallelize Loops
