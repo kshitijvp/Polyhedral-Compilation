@@ -129,7 +129,7 @@ your_llvm_installation/build_polly/bin/clang -O0 -g -I utilities -I linear-algeb
 
 ./gemm_ref 2>gemm_ref.out
 
-/home/kshitijvp/llvm-project/build_polly/bin/clang -O0 -g -I utilities -I linear-algebra/blas/gemm utilities/polybench.c linear-algebra/blas/gemm/gemm.c -mllvm -polly -mllvm -polly-parallel -lgomp -DPOLYBENCH_DUMP_ARRAYS -lm -o gemm_parallel_ref
+your_llvm_installation/build_polly/bin/clang -O0 -g -I utilities -I linear-algebra/blas/gemm utilities/polybench.c linear-algebra/blas/gemm/gemm.c -mllvm -polly -mllvm -polly-parallel -lgomp -DPOLYBENCH_DUMP_ARRAYS -lm -o gemm_parallel_ref
 
 ./gemm_parallel_ref 2>gemm_parallel_ref.out
 ```
